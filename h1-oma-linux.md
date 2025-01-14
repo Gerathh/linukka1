@@ -43,7 +43,7 @@
 
     -Käytin Virtualbox versiota 7.1.4 r165100 (Qt6.5.3)  
     -Asennetttuna oli myös Oracle Virtualbox Extension Pack ver. 7.1.4r165100  
-    -Asennusmediana oli debian-live-12.9.0-amd64-xfce.iso  
+    -Asennusmediana oli debian-live-12.9.0-amd64-xfce.iso jonka mounttasin optical diskiksi  
     -Annoin virtuaalikoneelle 4 ydintä  
     -Annoin virtuaalikoneelle 8Gb RAM:ia  
     -Annoin virtuaalikoneelle 30 Gb kiintolevytilaa  
@@ -54,4 +54,7 @@
 <br>
 
  <img src="kone.png">  
- Kun olin säätänyt asetukset kuntoon käynnistin virtuaalikoneen.
+ 
+ <H3>Virtuaalikoneen käynnistys</H3>  
+ 
+ Kun olin säätänyt asetukset kuntoon käynnistin virtuaalikoneen painamalla Start näppäintä.
