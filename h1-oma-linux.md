@@ -42,13 +42,16 @@
 <H4>Virtuaalikoneen tiedot ja versiot</H4>  
 
     -Käytin Virtualbox versiota 7.1.4 r165100 (Qt6.5.3)  
-    -Asennetttuna oli myös Oracle Virtualbox Extension Pack  
+    -Asennetttuna oli myös Oracle Virtualbox Extension Pack ver. 7.1.4r165100  
     -Asennusmediana oli debian-live-12.9.0-amd64-xfce.iso  
     -Annoin virtuaalikoneelle 4 ydintä  
     -Annoin virtuaalikoneelle 8Gb RAM:ia  
     -Annoin virtuaalikoneelle 30 Gb kiintolevytilaa  
+    -Annoin virtuaalikoneelle videomuistia 128MB ja laitoin päälle 3d kiihdytyksen
+    -Annoin virtuaalikoneelle nimeksi Debian h1
 
 
 <br>
 
-
+ <img src="kone.png">  
+ Kun olin säätänyt asetukset kuntoon käynnistin virtuaalikoneen.
