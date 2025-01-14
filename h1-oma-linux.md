@@ -29,7 +29,7 @@
 <h4>Rauta</h4>  
 
 
-    -Prosessori 7800x3D (8 ydintä, 16 säijettä)
+    -Prosessori 7800x3D (8 ydintä, 16 säiettä)
     -RAM 64Gb (6000 Mt/s)
     -GPU Nvidia RTX 4090 (Ajuriversio 566.36)
     -NVMe 3 Tb  
@@ -68,11 +68,27 @@
 -Seuraavassa laitoin oikean aikavyöhykkeen, siis Suomen, Helsingin, jossa olen tällä hetkellä ja painoin sitten next  
 -Seuraavaksi valitsin näppäimistöasettelun "Finnish" ja painoin next  
 -Seuraavassa ruudussa joka koski partitioita valitsin "Erase Disk" ja painoin next  
--Seuraavassa ikkunassa kysyttiin nimeäni, käyttäjänimeäni, tietokoneen nimeä sekä salasanaa. Salasana tuli myös toistaa.
+-Seuraavassa ikkunassa kysyttiin nimeäni, käyttäjänimeäni, tietokoneen nimeä sekä salasanaa. Salasana tuli myös toistaa. Painoin jälleen next.  
+    
 </pre>  
 
 <img src="live2.png">  
 
 <pre>
+-Asennusohjelma näytti koosteen valinnoistani, jotka vaikuttivat oikeilta. Painoin Install.  
+-7 minuutin päästä asennusohjelma oli valmis ja haluaa käynnistää itsensä uudestaan. Painan Done.  
+-Kone käynnistyy uudelleen ja kysyy käyttäjänimeä ja salasanaa jotka laitan ja painana Log In  
+-Avaan konsolin ja kirjoitan seuraavat käskyt. Sudoa käytettäessä laitetaan salasana.
+</pre>  
 
-</pre>
+<h4>Terminaali</h4>
+
+```bash
+sudo apt update
+
+sudo apt upgrade
+
+sudo apt install sl
+
+<br>
+
