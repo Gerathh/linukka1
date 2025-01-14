@@ -33,7 +33,10 @@
     -RAM 64Gb (6000 Mt/s)
     -GPU Nvidia RTX 4090 (Ajuriversio 566.36)
     -NVMe 3 Tb  
-    ![Add file: Upload](win.png)
+<br>
+    <img src="win.png">
+    
+    
 <br>
 
 <H4>Virtuaalikoneen tiedot ja versiot</H4>  
@@ -43,6 +46,9 @@
     -Asennusmediana oli debian-live-12.9.0-amd64-xfce.iso  
     -Annoin virtuaalikoneelle 4 ydintä  
     -Annoin virtuaalikoneelle 8Gb RAM:ia  
-    -Annoin virtuaalikoneelle 30 Gb kiintolevytilaa
+    -Annoin virtuaalikoneelle 30 Gb kiintolevytilaa  
+
 
 <br>
+
+
