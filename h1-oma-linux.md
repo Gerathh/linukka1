@@ -59,4 +59,20 @@
 <pre> 
  -Kun olin säätänyt asetukset kuntoon käynnistin virtuaalikoneen painamalla Start näppäintä.  
  -Avautui boot menu josta valitsin Live system (amd64)  
- -
+ -Hetken päästä avautui työpöytä jossa tuplaklikkasin "Install Debian"  
+</pre>  
+
+<img src="live.png">  
+<pre>
+-Asennusohjelma avautui, jätin kielen oletusarvoksi eli American English (United States) ja painoin next  
+-Seuraavassa laitoin oikean aikavyöhykkeen, siis Suomen, Helsingin, jossa olen tällä hetkellä ja painoin sitten next  
+-Seuraavaksi valitsin näppäimistöasettelun "Finnish" ja painoin next  
+-Seuraavassa ruudussa joka koski partitioita valitsin "Erase Disk" ja painoin next  
+-Seuraavassa ikkunassa kysyttiin nimeäni, käyttäjänimeäni, tietokoneen nimeä sekä salasanaa. Salasana tuli myös toistaa.
+</pre>  
+
+<img src="live2.png">  
+
+<pre>
+
+</pre>
