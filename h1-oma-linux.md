@@ -92,3 +92,4 @@ sudo apt install sl
 
 <br>
 
+<img src="juna.png">
