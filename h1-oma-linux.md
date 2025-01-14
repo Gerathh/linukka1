@@ -56,5 +56,7 @@
  <img src="kone.png">  
  
  <H3>Virtuaalikoneen käynnistys</H3>  
- 
- Kun olin säätänyt asetukset kuntoon käynnistin virtuaalikoneen painamalla Start näppäintä.
+<pre> 
+ -Kun olin säätänyt asetukset kuntoon käynnistin virtuaalikoneen painamalla Start näppäintä.  
+ -Avautui boot menu josta valitsin Live system (amd64)  
+ -
