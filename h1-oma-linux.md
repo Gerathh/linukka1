@@ -76,9 +76,9 @@
 
 <pre>
 -Asennusohjelma näytti koosteen valinnoistani, jotka vaikuttivat oikeilta. Painoin Install.  
--7 minuutin päästä asennusohjelma oli valmis ja haluaa käynnistää itsensä uudestaan. Painan Done.  
--Kone käynnistyy uudelleen ja kysyy käyttäjänimeä ja salasanaa jotka laitan ja painana Log In  
--Avaan konsolin ja kirjoitan seuraavat käskyt. Sudoa käytettäessä laitetaan salasana.
+-7 minuutin päästä asennusohjelma oli valmis ja halusi käynnistää itsensä uudestaan. Painoin Done.  
+-Kone käynnistyi uudelleen ja kysyi käyttäjänimeä ja salasanaa jotka laitoin ja painoin Log In  
+-Avasin konsolin ja kirjoitin seuraavat käskyt. Sudoa käytettäessä laitetaan salasana.
 </pre>  
 
 <h4>Terminaali</h4>
@@ -100,12 +100,18 @@ sl
 <h2>Lähteet</h2>  
 <pre>
 -http://terokarvinen.com/2006/raportin-kirjoittaminen-4  
+    Tehtävä x) käytetty pohjana raportin kirjoittamistehtävän pohjana  
 -https://www.gnu.org/philosophy/free-sw.html  
+    Tehtävä x) Käytetty pohjana ymmärryksen kasvattamisessa free softwaren suhteen ja open sourcen
 -Kurssi Linux-palvelimet - ICI003AS2A-3008 - 2025p1 - ti 1740 online - Tero  
+    Moodlesta löytyi linkkejä alla oleviin
 -https://terokarvinen.com/linux-palvelimet/  
+    Tehtävän-anto
 -https://itsfoss.com/ubuntu-terminal-train/  
+    Käytin hakukonetta löytääkseni tuksuttavan junan josta ainakin luulen Bonuksessa olleen kysymys
 -Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
--Pohjana Tero Karvinen 2012: Linux kurssi, http://terokarvinen.com</pre>
+-Pohjana Tero Karvinen 2012: Linux kurssi, http://terokarvinen.com </pre>
 
 
-Tekijä: Jere Pellinen, Haaga-Helian ammattikorkeakoulu, IT-Tradenomin linja, Helsinki, 2025
+Tekijä: Jere Pellinen, Haaga-Helian ammattikorkeakoulu, Tradenomi, tietojenkäsittely (ei valmistunut vielä)  
+Helsinki, 2025
