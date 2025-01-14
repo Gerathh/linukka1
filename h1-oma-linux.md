@@ -108,4 +108,4 @@ sl
 -Pohjana Tero Karvinen 2012: Linux kurssi, http://terokarvinen.com</pre>
 
 
-Tekijä: Jere Pellinen, Haaga-Helian ammattikorkeakoulu, IT-Tradenomin linja, Helsinki,2025
+Tekijä: Jere Pellinen, Haaga-Helian ammattikorkeakoulu, IT-Tradenomin linja, Helsinki, 2025
