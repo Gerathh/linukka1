@@ -1,6 +1,6 @@
 
 
-<H1>h1 Oma Linux</H1>
+<H1>h1 Oma Linux Jere Pellinen</H1>
 <h2>Raportin  kirjoittaminen</h2>  
 
 -Kirjoita jokainen vaihe työssäsi ylös   
@@ -83,13 +83,29 @@
 
 <h4>Terminaali</h4>
 
-```bash
+<pre>
 sudo apt update
 
 sudo apt upgrade
 
-sudo apt install sl
+sudo apt install sl  
+    
+sl
+</pre>
 
-<br>
+<h2>Juna</h2>
 
-<img src="juna.png">
+<img src="juna.png">  
+
+<h2>Lähteet</h2>  
+<pre>
+-http://terokarvinen.com/2006/raportin-kirjoittaminen-4  
+-https://www.gnu.org/philosophy/free-sw.html  
+-Kurssi Linux-palvelimet - ICI003AS2A-3008 - 2025p1 - ti 1740 online - Tero  
+-https://terokarvinen.com/linux-palvelimet/  
+-https://itsfoss.com/ubuntu-terminal-train/  
+-Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
+-Pohjana Tero Karvinen 2012: Linux kurssi, http://terokarvinen.com</pre>
+
+
+Tekijä: Jere Pellinen, Haaga-Helian ammattikorkeakoulu, IT-Tradenomi, Helsinki 2025
