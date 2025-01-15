@@ -7,7 +7,7 @@
 
 -Jos joku muu lukee raportin, jokaisen pitää pystyä toistamaan raportin pohjalta esimerkiksi vastaan tulleet ongelmat   
 
--Älä vain tee vaan kirjaa jatkuvasti kaikki komennot ylös kellonaikoineen  
+-Älä vain tee, vaan kirjaa jatkuvasti kaikki komennot ylös kellonaikoineen  
 
 -Tee raporteista selkeä; käytä väliotsikoita ja kappaleita  
 
