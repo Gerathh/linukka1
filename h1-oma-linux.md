@@ -38,10 +38,10 @@
     
     
 <br>
-
+  <b>Aika: 0:00</b> 
 <H4>Virtuaalikoneen tiedot ja versiot</H4>  
 
-    <b>Aika: 0:00</b>  
+   
     -Käytin Virtualbox versiota 7.1.4 r165100 (Qt6.5.3)  
     -Asennetttuna oli myös Oracle Virtualbox Extension Pack ver. 7.1.4r165100  
     -Asennusmediana oli debian-live-12.9.0-amd64-xfce.iso jonka mounttasin optical diskiksi  
