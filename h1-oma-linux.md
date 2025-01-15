@@ -41,6 +41,7 @@
 
 <H4>Virtuaalikoneen tiedot ja versiot</H4>  
 
+    <b>Aika: 0:00</b>  
     -Käytin Virtualbox versiota 7.1.4 r165100 (Qt6.5.3)  
     -Asennetttuna oli myös Oracle Virtualbox Extension Pack ver. 7.1.4r165100  
     -Asennusmediana oli debian-live-12.9.0-amd64-xfce.iso jonka mounttasin optical diskiksi  
@@ -48,7 +49,8 @@
     -Annoin virtuaalikoneelle 8Gb RAM:ia  
     -Annoin virtuaalikoneelle 30 Gb kiintolevytilaa  
     -Annoin virtuaalikoneelle videomuistia 128MB ja laitoin päälle 3d kiihdytyksen
-    -Annoin virtuaalikoneelle nimeksi Debian h1
+    -Annoin virtuaalikoneelle nimeksi Debian h1  
+   <b>Aika: 0:09</b> 
 
 
 <br>
@@ -57,28 +59,34 @@
  
  <H3>Virtuaalikoneen käynnistys</H3>  
 <pre> 
- -Kun olin säätänyt asetukset kuntoon käynnistin virtuaalikoneen painamalla Start näppäintä.  
- -Avautui boot menu josta valitsin Live system (amd64)  
- -Hetken päästä avautui työpöytä jossa tuplaklikkasin "Install Debian"  
+<b>Aika: 0:09</b>  
+-Kun olin säätänyt asetukset kuntoon käynnistin virtuaalikoneen painamalla Start näppäintä.  
+-Avautui boot menu josta valitsin Live system (amd64)  
+-Hetken päästä avautui työpöytä jossa tuplaklikkasin "Install Debian"  
+<b>Aika: 0:13</b> 
 </pre>  
 
 <img src="live.png">  
-<pre>
+<pre>  
+<b>Aika: 0:14</b> 
 -Asennusohjelma avautui, jätin kielen oletusarvoksi eli American English (United States) ja painoin next  
 -Seuraavassa laitoin oikean aikavyöhykkeen, siis Suomen, Helsingin, jossa olen tällä hetkellä ja painoin sitten next  
 -Seuraavaksi valitsin näppäimistöasettelun "Finnish" ja painoin next  
 -Seuraavassa ruudussa joka koski partitioita valitsin "Erase Disk" ja painoin next  
 -Seuraavassa ikkunassa kysyttiin nimeäni, käyttäjänimeäni, tietokoneen nimeä sekä salasanaa. Salasana tuli myös toistaa. Painoin jälleen next.  
+<b>Aika: 0:29</b> 
     
 </pre>  
 
 <img src="live2.png">  
 
-<pre>
--Asennusohjelma näytti koosteen valinnoistani, jotka vaikuttivat oikeilta. Painoin Install.  
+<pre>  
+<b>Aika: 0:30</b> 
+-Asennusohjelma näytti koosteen valinnoistani, jotka vaikuttivat oikeilta. Painoin Install.   
 -7 minuutin päästä asennusohjelma oli valmis ja halusi käynnistää itsensä uudestaan. Painoin Done.  
 -Kone käynnistyi uudelleen ja kysyi käyttäjänimeä ja salasanaa jotka laitoin ja painoin Log In  
 -Avasin konsolin ja kirjoitin seuraavat käskyt. Sudoa käytettäessä laitetaan salasana.
+<b>Aika: 0:44</b> 
 </pre>  
 
 <h4>Terminaali</h4>
@@ -91,7 +99,9 @@ sudo apt upgrade
 sudo apt install sl  
     
 sl
-</pre>
+</pre>  
+
+<b>Aikaa meni yhteensä 1:10</b>  
 
 <h2>Juna</h2>
 
