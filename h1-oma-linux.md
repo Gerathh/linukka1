@@ -30,9 +30,10 @@
 
 
     -Prosessori 7800x3D (8 ydintä, 16 säiettä)
-    -RAM 64Gb (6000 Mt/s)
-    -GPU Nvidia RTX 4090 (Ajuriversio 566.36)
-    -NVMe 3 Tb  
+    -RAM 64GB (6000 Mt/s)
+    -GPU Nvidia RTX 4090 24GB Vram (Ajuriversio 566.36)
+    -NVMe 3 TB  
+    (yllä olevaan rautakoneeseen tehty muutoksia 21.1.2025, muutettu pienet beet isoiksi ja lisätty Vram määrä)
 <br>
     <img src="win.png">
     
