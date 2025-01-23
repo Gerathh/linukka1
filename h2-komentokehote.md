@@ -42,7 +42,7 @@ ja painoin <kbd>Enter</kbd>.
 
 #### a) Micro
 
-Annoin alla olevan komennon ja painoin enter. (Komennon sisältöä ei ole tarkasti mainittu tekstissä, mutta se voisi olla esimerkiksi:)
+Annoin alla olevan komennon ja painoin enter. 
 
 ```bash
 sudo apt update && sudo apt install micro
@@ -281,7 +281,7 @@ ps aux | grep "jere" | nl | less
 
 ### Aika 1:46 – f) Rauta
 
-Kirjoitin esimerkiksi:
+Kirjoitin terminaaliin:
 
 ```bash
 sudo lshw -short -sanitize
