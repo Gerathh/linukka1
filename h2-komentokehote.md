@@ -18,8 +18,15 @@
 ---
 
 ### Rauta
+•	Prosessori 7800x3D (8 ydintä, 16 säiettä)
+•	RAM 64GB (6000 Mega transfers/s)
+•	GPU Nvidia RTX 4090 24GB VRam (Ajuriversio 566.36)
+•	NVMe 3 TB  
+
 
 ![Rauta](win2.png)
+
+
 
 ### Virtuaalikoneen tiedot ja versiot
 
