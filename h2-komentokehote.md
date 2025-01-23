@@ -307,10 +307,12 @@ Käsky:
 journalctl -f
 ```
 
-Tämä näyttää tietoja siitä, mitä koneen kerneli tekee ja milloin. Varoitukset ovat keltaisella, virheet punaisella. Täältä näkyy kaikki järjestelmän tapahtumat, selkeämmin ja tarkemmin kuin vaikkapa Windowsin Event Vieweristä.
+Tämä vaikuttaisi kertovan käyttäjäni sudottamisen eli milloin minä olen ottanut rootin käyttöön ja kellonajan, milloin sudo päättyy, eli root oikeudet. Vaikuttaisi olevan noin 10 sekuntia. Kertoo myös terminaalista jonka laitenimen loppu on 0. Se näyttää missä kansiossa olen ollut. Tässä tapauksessa /var/log/ ja että olen ottanut siellä rootin, ja kertoo käskyn minkä olen antanut.
 
 ![journalctl](journalctl.png)
 
+```bash
+Tämä kertoo mitä tämän koneen kerneli tekee ja milloin. Varoitukset näyttävät keltaiselta. Virheet punaisella. Täällä tosiaan näkyy kaikki. Vaikuttaisi että paljon enemmän kuin Windows event viewer.
 ---
 
 ### Aika 3:00 – h) Plugin microniin
