@@ -66,11 +66,7 @@ sudo apt update && sudo apt install -y htop tree ncdu
 
 ---
 
-### Aika 0:18 – c) FHS
-
-*(FHS = Filesystem Hierarchy Standard. Ei erillisiä esimerkkejä komennosta annettu.)*
-
----
+### Aika 0:18 – 
 
 ### d) Perustiedostojärjestelmän navigointi
 
