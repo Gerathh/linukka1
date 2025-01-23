@@ -388,7 +388,7 @@ Pluginien hallinta löytyy myös [micro-editorin](https://micro-editor.github.io
 ---
 
 
-![linux](pingu.png)
+![linux](Pingu.png)
 
 ## Lähteet
 
