@@ -296,8 +296,10 @@ Tuli listaus laitteista, väylistä, prosessorin tiedoista, kiintolevystä ja se
 - **Description**: kuvaus
 
 **HW path** on ikään kuin laiteväylän osoite, jonka kautta kyseinen laite löytyy järjestelmästä. Kaikki lähtee root-väylästä (root-bus). Näin `lshw` näyttää, miten laite on liitetty käyttöjärjestelmän näkökulmasta.  
-•	Otetaan vaikka rivillä 14 oleva SVGA II Adapter sen H/w path on /0/100/2/0/100/ joka on silta 440FX – 82441FX [Natoma]  /0/ VirtualBoxin väylä  järjestelmään. *(WAU!)* 
-•	lshw siis käyttää hw path:iä näyttääkseen miten laite on liitetty käyttöjärjestelmän näkökulmasta 
+•	Otetaan vaikka rivillä 14 oleva SVGA II Adapter sen H/w path on /0/100/2/0/100/ joka on silta 440FX – 82441FX [Natoma]  /0/ VirtualBoxin väylä  järjestelmään. *(WAU!)*  
+
+•	lshw siis käyttää hw path:iä näyttääkseen miten laite on liitetty käyttöjärjestelmän näkökulmasta   
+
 
 ---
 
