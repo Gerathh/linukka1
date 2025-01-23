@@ -284,7 +284,19 @@ ps aux | grep "jere" | nl | less
 Kirjoitin esimerkiksi:
 
 ```bash
-sudo lshw -short
+sudo lshw -short -sanitize
+```
+
+```bash
+sudo apt install lshw
+```
+
+```bash
+man lshw
+```
+
+```bash
+sudo lshw -short -sanitize | nl | less
 ```
 
 ![lshw-tuloste](lshw.png)
