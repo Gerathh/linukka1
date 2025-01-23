@@ -304,7 +304,7 @@ Tuli listaus laitteista, väylistä, prosessorin tiedoista, kiintolevystä ja se
 Käsky:
 
 ```bash
-journalctl
+journalctl -f
 ```
 
 Tämä näyttää tietoja siitä, mitä koneen kerneli tekee ja milloin. Varoitukset ovat keltaisella, virheet punaisella. Täältä näkyy kaikki järjestelmän tapahtumat, selkeämmin ja tarkemmin kuin vaikkapa Windowsin Event Vieweristä.
@@ -315,16 +315,21 @@ Tämä näyttää tietoja siitä, mitä koneen kerneli tekee ja milloin. Varoitu
 
 ### Aika 3:00 – h) Plugin microniin
 
-Suoritin seuraavat käskyt (esimerkiksi):
-
+Suoritin seuraavat käskyt:
 ```bash
-micro -plugin install <plugin_nimi>
+man micro
 ```
 
-tai 
+```bash
+sudo micro --plugin search
+```
 
 ```bash
-micro -plugin list
+sudo micro --plugin available
+```
+
+```bash
+sudo micro –plugin install filemanager
 ```
 
 Pluginien hallinta löytyy myös [micro-editorin](https://micro-editor.github.io/plugins.html) dokumentaatiosta.
