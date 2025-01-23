@@ -342,6 +342,7 @@ Pluginien hallinta löytyy myös [micro-editorin](https://micro-editor.github.io
 - [https://www.geeksforgeeks.org/grep-command-in-unixlinux/](https://www.geeksforgeeks.org/grep-command-in-unixlinux/) – Tietoa `grep`-komennosta  
 - [https://www.linux.com/training-tutorials/deep-hardware-discovery-lshw-and-lsusb-linux/](https://www.linux.com/training-tutorials/deep-hardware-discovery-lshw-and-lsusb-linux/) – Opin H/W pathistä  
 - [https://micro-editor.github.io/plugins.html](https://micro-editor.github.io/plugins.html) – `micro`-editorin plugarit
+- Llama MD nuotoilun avustamisessa.
 
 ---
 
