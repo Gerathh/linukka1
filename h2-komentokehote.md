@@ -334,7 +334,7 @@ sudo micro --plugin available
 ```
 
 ```bash
-sudo micro –plugin install filemanager
+sudo micro -–plugin install filemanager
 ```
 
 Pluginien hallinta löytyy myös [micro-editorin](https://micro-editor.github.io/plugins.html) dokumentaatiosta.
