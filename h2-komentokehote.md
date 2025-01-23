@@ -24,7 +24,7 @@
 
 ### Virtuaalikoneen tiedot ja versiot
 
-![Virtuaalikoneen tiedot ja versiot](virtuaalikoneentiedot.png)
+![Virtuaalikoneen tiedot](virtuaalikoneentiedot.png)
 
 ---
 
