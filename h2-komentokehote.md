@@ -68,7 +68,187 @@ sudo apt update && sudo apt install -y htop tree ncdu
 
 ### Aika 0:18 – c) FHS
 
+*(FHS = Filesystem Hierarchy Standard. Ei erillisiä esimerkkejä komennosta annettu.)*
 
+---
+
+### d) Perustiedostojärjestelmän navigointi
+
+- **`cd /`**
+  
+  ```bash
+  cd /
+  ```
+  
+  - Siirtyy juurihakemistoon (`/`).
+  
+- **`ls`**
+  
+  ```bash
+  ls
+  ```
+  
+  - Listaa juurihakemiston sisällön.
+  - Eroa esimerkiksi Windowsiin on, että ei ole asemakirjaimia. Kaikki on root hakemistossa.
+  - Tämä on siis root, juuri. Mitään ylempää ”hakemistoa” ei ole.
+  
+- **`pwd`**
+  
+  ```bash
+  pwd
+  ```
+  
+  - Tulostaa nykyisen työhakemiston polun, tässä tapauksessa `/`.
+  
+- **`cd /home/`**
+  
+  ```bash
+  cd /home/
+  ```
+  
+  - Siirtyy `/home/`-hakemistoon.
+  
+- **`ls`**
+  
+  ```bash
+  ls
+  ```
+  
+  - Listaa `/home/`-hakemiston sisällön.
+  - Home-kansiosta löytyi `jere`-kansio. `jere` on sininen, mikä kertoo, että kyseessä on kansio (oletuksena). Tämä sisältää kotihakemistot kaikille käyttäjille. Tässä tapauksessa vain yksi käyttäjä, joten yksi kansio.
+  
+- **`cd jere/`**
+  
+  ```bash
+  cd jere/
+  ```
+  
+  - Siirtyy `jere`-kotihakemistoon.
+  
+- **`ls`**
+  
+  ```bash
+  ls
+  ```
+  
+  - Listaa `jere`-hakemiston sisällön.
+  - Alikansioina löytyi oletuksena: `Desktop`, `Documents`, `Music`, `Pictures`, `Public`, `Templates`, `Videos`. Alihakemistojen nimet kuvaavat hyvin, mihin tiedosto kannattaa tallentaa.
+  
+- **`cd /`**
+  
+  ```bash
+  cd /
+  ```
+  
+  - Palautuu juurihakemistoon.
+  
+- **`pwd`**
+  
+  ```bash
+  pwd
+  ```
+  
+  - Tulostaa nykyisen työhakemiston polun, tässä tapauksessa `/`.
+  
+- **`ls`**
+  
+  ```bash
+  ls
+  ```
+  
+  - Listaa juurihakemiston sisällön.
+  
+- **`cd etc/`**
+  
+  ```bash
+  cd etc/
+  ```
+  
+  - Siirtyy `/etc/`-hakemistoon.
+  
+- **`ls`**
+  
+  ```bash
+  ls
+  ```
+  
+  - Listaa `/etc/`-hakemiston sisällön.
+  - `/etc/`-hakemistosta löytyi kaikki asetukset. Kaikki ovat luettavissa lukuohjelmalla, ihan tekstimuodossa.
+  
+- **`micro fstab`**
+  
+  ```bash
+  micro fstab
+  ```
+  
+  - Avaa `fstab`-tiedoston `micro`-editorissa.
+  - Täällä näkyi `fstab`-in asetukset eli file system, mikä levy tai sen osio on missäkin käytössä sekä muita tietoja. Täällä voi myös muuttaa niitä helposti.
+  
+  ![fstab](etcfstab.png)
+  
+- **`Ctrl+Q`**
+  
+  - Sulkee `micro`-editorin.
+  
+- **`cd /`**
+  
+  ```bash
+  cd /
+  ```
+  
+  - Palautuu juurihakemistoon.
+  
+- **`ls`**
+  
+  ```bash
+  ls
+  ```
+  
+  - Listaa juurihakemiston sisällön.
+  
+- **`cd media/`**
+  
+  ```bash
+  cd media/
+  ```
+  
+  - Siirtyy `/media/`-hakemistoon.
+  
+  - Täältä löysin kaiken, mitä olin mountannut: USB-tikun, CD-aseman tai lerppuaseman. Nyt siellä ei ollut mitään.
+  
+- **`cd /`**
+  
+  ```bash
+  cd /
+  ```
+  
+  - Palautuu juurihakemistoon.
+  
+- **`cd var/log`**
+  
+  ```bash
+  cd var/log
+  ```
+  
+  - Siirtyy `/var/log/`-hakemistoon.
+  
+- **`ls`**
+  
+  ```bash
+  ls
+  ```
+  
+  - Listaa `/var/log/`-hakemiston sisällön.
+  - Täältä löysin kaikki lokitiedostot. Osa oli `/var/log/`-juressa valkoisena, osa hakemistojen alla. Kaikki oli luettavissa `nano`-lla tai `micro`-editorilla.
+  
+- **`micro README`**
+  
+  ```bash
+  micro README
+  ```
+  
+  - Avaa `README`-tiedoston `micro`-editorissa.
+  - Täältä tiedostosta selvisi, että perinteinen `syslog` on korvattu `Journalilla` ja kertoi kätevästi, miten sitä voi käyttää.
 
 ---
 
@@ -121,7 +301,7 @@ Tuli listaus laitteista, väylistä, prosessorin tiedoista, kiintolevystä ja se
 - **Class**: laitteen luokka
 - **Description**: kuvaus
 
-**HW path** on ikään kuin laiteväylän osoite, jonka kautta kyseinen laite löytyy järjestelmästä. Kaikki lähtee root-väylästä (root-bus). Näin lshw näyttää, miten laite on liitetty käyttöjärjestelmän näkökulmasta.
+**HW path** on ikään kuin laiteväylän osoite, jonka kautta kyseinen laite löytyy järjestelmästä. Kaikki lähtee root-väylästä (root-bus). Näin `lshw` näyttää, miten laite on liitetty käyttöjärjestelmän näkökulmasta.
 
 ---
 
