@@ -31,7 +31,24 @@
 
 
 
-### Virtuaalikoneen tiedot ja versiot
+### Virtuaalikoneen tiedot ja versiot  
+•	Käytin Virtualbox versiota 7.1.4 r165100 (Qt6.5.3)  
+
+•	Asennetttuna oli myös Oracle Virtualbox Extension Pack ver. 7.1.4r165100  
+
+•	Kopion aiemmasta tehtävästä tyhjän valmiiksi asennetun koneen jossa siis käyttöjärjestelmänä oli Debian 12.9.0  
+
+•	Annoin sille tällä kertaa 8 ydintä  
+
+•	Kiintolevytilaa 30 GB  
+
+•	Viedomuistia 256MB  
+
+•	RAM:ia 16 GB  
+
+•	Virtuaalikoneen nimeksi annoin Debian h2  
+
+
 
 ![Virtuaalikoneen tiedot ja versiot](virtuaalikoneentiedot.png)
 
