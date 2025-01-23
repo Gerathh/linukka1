@@ -66,9 +66,7 @@ sudo apt update && sudo apt install -y htop tree ncdu
 
 ---
 
-### Aika 0:18 – 
-
-### d) Perustiedostojärjestelmän navigointi
+### Aika 0:18 – C) Perustiedostojärjestelmän navigointi
 
 - **`cd /`**
   
