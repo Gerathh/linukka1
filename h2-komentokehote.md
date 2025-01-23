@@ -387,6 +387,9 @@ Pluginien hallinta löytyy myös [micro-editorin](https://micro-editor.github.io
 
 ---
 
+
+![linux](pingu.png)
+
 ## Lähteet
 
 - [https://en.wikipedia.org/wiki/Command-line_interface](https://en.wikipedia.org/wiki/Command-line_interface) – Tietoa CLI:stä  
