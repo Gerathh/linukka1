@@ -1,4 +1,3 @@
-```markdown
 ## Tehtävä Komentaja Pingviini
 
 ### x) Lue ja tiivistä
@@ -24,7 +23,7 @@
 
 ### Virtuaalikoneen tiedot ja versiot
 
-![Virtuaalikoneen tiedot](virtuaalikoneentiedot.png)
+![Virtuaalikoneen tiedot ja versiot](virtuaalikoneentiedot.png)
 
 ---
 
@@ -174,4 +173,3 @@ Pluginien hallinta löytyy myös [micro-editorin](https://micro-editor.github.io
 
 **Tekijä**: Jere Pellinen, Haaga-Helian ammattikorkeakoulu, Tradenomi, tietojenkäsittely (ei valmistunut vielä)  
 **Helsinki, 2025**
-```
