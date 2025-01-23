@@ -312,7 +312,10 @@ Tämä vaikuttaisi kertovan käyttäjäni sudottamisen eli milloin minä olen ot
 ![journalctl](journalctl.png)
 
 ```bash
+sudo journalctl
+```
 Tämä kertoo mitä tämän koneen kerneli tekee ja milloin. Varoitukset näyttävät keltaiselta. Virheet punaisella. Täällä tosiaan näkyy kaikki. Vaikuttaisi että paljon enemmän kuin Windows event viewer.
+
 ---
 
 ### Aika 3:00 – h) Plugin microniin
