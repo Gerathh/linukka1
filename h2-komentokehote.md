@@ -408,4 +408,5 @@ Pluginien hallinta löytyy myös [micro-editorin](https://micro-editor.github.io
 **Tekijä**: Jere Pellinen, Haaga-Helian ammattikorkeakoulu, Tradenomi (AMK), tietojenkäsittely opiskelija
 **Helsinki, 2025**
 ---
-Edit 23.1.2025 muutettu titteli opiskelijaksi
+Edit 23.1.2025 muutettu titteli opiskelijaksi  
+Edit 24.1.2025 muutettu lshw.png screenshot paremmaksi.
