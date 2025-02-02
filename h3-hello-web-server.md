@@ -1,57 +1,47 @@
-
-
 ```md
-# H3 Hello Web Server
+# Hello Web Server
 
-[Apache HTTP Server Documentation: Name-Based Virtual Hosts](https://httpd.apache.org/docs/2.4/vhosts/name-based.html)  
-- IP-pohjaisessa jokaiselle verkkotunnukselle tarvitaan oma IP-osoite.  
-- Nimipohjaisessa samaa IP-osoitetta voidaan käyttää useille verkkotunnuksille.  
-- Jos käyttäjän pyyntö ei vastaa mitään tiettyä **ServerName** tai **Alias** -määritystä, niin käytetään ensimmäistä VirtualHostia, joka vastaa IP:hen ja porttiin; eli ensimmäinen VirtualHost toimii oletuspalveluna.
+### x)
+https://httpd.apache.org/docs/2.4/vhosts/name-based.html  
+•	IP- pohjaisessa jokaiselle verkkotunnukselle tarvitaan oma IP-osoite  
+•	Nimipohjaisessa samaa UIP-osoitetta voidaan käyttää useille verkkotunnuksille  
+•	Jos käyttäjän pyyntö ei vastaa mitään tiettyä ServerNamke taI Alias-määritystä, niin käytetään ensimmmäistä Virtualhostia joka vastaa IP:hen ja porttiin; eli ensimmäinen virtualHost toimii oletuspallveluna.
 
-[Name-based Virtual Hosts on Apache (Terokarvinen.com)](https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/)  
-- Sivulla kerrotaan hyvin, miten yhdellä IP-osoitteella voidaan ajaa useita verkkotunnuksia Apachen avulla.  
-- Käytännössä konfiguraatio tehdään luomalla jokaista verkkotunnusta varten oma VirtualHost-asetus.  
-  - Määritellään **ServerName**, **ServerAlias** ja **DocumentRoot**.  
-- Tiedostossa `/etc/apache2/sites-available/` säilytetään sivuston konfiguraatio.  
-  - Tämän jälkeen sivusto aktivoidaan komennolla `a2ensite` ja Apache käynnistetään uudelleen.
+https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/  
 
----
+•	Sivulla kerrotaan hyviun miten yhdellä IP-osoitteella voidaan ajaa useita verkkotunnuksia Apachen avulla  
+•	Käytännössä confaus tehdään luomalla jokaista verkkotunnusta varten oma VirtualHost-asetu. Siinä määäritellään ServerName, ServerAlias ja DOcumentRoot  
+•	Tiedostossa `/etc/apache2/sites-available/` säilytetään sivuston konfiguraatio. Tämän jälkeen sivusto aktivoidaan komennolla `a2ensite` ja Apache käynnistetään uudelleen.
 
-## a) Localhost vastaa
+### a)
+Localhost vastaa
 
-![Localhost vastaa](https://raw.githubusercontent.com/Gerathh/linukka1/main/h31.png)
+![h31.png](https://github.com/Gerathh/linukka1/blob/main/h31.png)
 
----
-
-## b) Lokitiedoston katsominen
-
-Annoin käskyt:
+### b)
+Annoin käskyt
 
 ```bash
 cd /
 sudo nano /var/log/apache2/access.log
 ```
 
-1. **IP-osoite** (localhost = 127.0.0.1).  
-2. **Viiva** (ident-kenttä) – ident-tietoa ei käytetä.  
-3. **Toinen viiva** (autentikoitu käyttäjä -kenttä) – jos olisi perusautentikointi tms., käyttäjätunnus näkyisi tässä.  
-4. **Aikaleima** (päivä, kellonaika, aikavyöhyke).  
-5. **Pyynnön sisältö**  
-   - Esim. `GET /index.html HTTP/1.1`  
-   - `GET` on HTTP-metodi  
-   - `/index.html` pyydetty URL-polku  
-   - `HTTP/1.1` protokollan versio  
-6. **HTTP-vastauskoodi** (esim. `200` = OK).  
-   - (404 yleinen, jos sivua ei löydy)  
-7. **Tiedoston koko** tavuina.  
-8. **“-”** – jos olisi klikattu linkkiä toiselta sivulta, tähän tulisi sen URL.  
-9. **Asiakkaan tunniste** (selaimen user-agent) – kertoo esim. käyttöjärjestelmän ja selaimen.
+![h32.png](https://github.com/Gerathh/linukka1/blob/main/h32.png)
 
----
+•	Ensimmäisenä on IP osoite, josta pyyntö tuli. (localhost=127.0.0.1)  
+•	Sitten on viiva joka tarkoittaa ident -kenttää. Viiva kertoo että ident -tietoa ei käytetä.  
+•	Toinen viiva on autentikoitu käyttäjä-kenttä- Jos Apacheen olisi määritelty perusautentikointi, tai joku muu tunnistautuminen ja se olisi onnistunmut, näkyisi tässä käyttäjätunnus.  
+•	Seuraavana aikaleima milloin pyyntö on saatu. Päivä, kellonaika  ja aikabyöhyke  
+•	Seuraavana esim. kuvassa oleva rivi 1 GET on http-metodi, /index.html on pyydetty URL polku, HTTP/1.1 kertoo http-protokollan version  
+•	200 http-palvelimen vastauskoodi.  
+  o	200 = OK eli pyyntö onnistunut  
+  o	(404 on aika yleinen, jos sivustoa ei löydy)  
+•	Tiedoston koko tavuina  
+•	”-” tarkoittaa että jos käyttäjä olisi klikannut linkkiä toiselta sivulta; ötögöb tulisi sen url.  
+•	Viimeisenä asiakkaan tunniste, voidaan päätellä että Linuxista tullut ja mozilla firefoix selaimella.
 
-## c) VirtualHost-määrityksen lisääminen
-
-Annoin seuraavat käskyt:
+### c)
+Annoin seuraavat käskyt
 
 ```bash
 cd /
@@ -60,71 +50,70 @@ sudo a2dissite 000-default.conf
 sudo nano /etc/apache2/sites-available/hattu.example.com.conf
 ```
 
-Lisäsin tiedostoon esimerkiksi seuraavan sisällön:
+Lisäsin sinne seuraavan sisällön:
 
-```apache
-<VirtualHost *:80>
-    ServerName hattu.example.com
-    ServerAlias localhost
-    DocumentRoot /home/jere/hattu
-    <Directory /home/jere/hattu>
-        Require all granted
-    </Directory>
-</VirtualHost>
-```
+![h33.png](https://github.com/Gerathh/linukka1/blob/main/h33.png)
 
-- **ServerName**: pääverkkotunnus, jota VirtualHost palvelee  
-- **ServerAlias**: mahdollistaa sisällön näkymisen myös `http://localhost/` -osoitteessa  
-- **DocumentRoot**: osoittaa yllä luotuun kansioon  
-- `<Directory>`-määritys: sallii tehtävänannon mukaisesti kaikille pääsyn sisältöön
+•	ServerName on pääverkkotunnus jota tämäVirtualhost palvelee  
+•	ServerAlias localhost sallii saman sisällönnbäkyvän myös osoitteessa http://localhost/ osoitteessa  
+•	DocumentRoot osoittaa kansioon jonka loin yllä  
+•	`<Directory>` -määrityksessä sallitaan tehtävänannon mukaisesti kaikille pääsy sisältöön
 
-Seuraavaksi:
+Annoin sitten seuraavat komennon:
 
 ```bash
 sudo a2ensite etc/apache2/sites-available/hattu.example.com.conf
 ```
 
-Sain virheilmoituksen:
+Sain virheilmoituksen “ERROR: Site /etc/apache2/sites-available/hattu.example.com does not exist!  
+Eli pitää vähän vielä säätää.
 
-```
-ERROR: Site /etc/apache2/sites-available/hattu.example.com does not exist!
+```bash
+cd /
+sudo nano /etc/hosts
 ```
 
-Polussa oli ongelma. Kokeilin:
+Muunsin ensimmäisen rivin muotoon `127.0.0.1 hattu.example.com`
+
+![h34.png](https://github.com/Gerathh/linukka1/blob/main/h34.png)
+
+Nyt uudestaan sama komennon:
+
+```bash
+sudo a2ensite etc/apache2/sites-available/hattu.example.com.conf
+```
+
+No ei toimi vieläkään. Sama virheilmoitus. Ehkä minun pitää olla samassa hakemistossa?
 
 ```bash
 cd /etc/apache2/sites-available/
 sudo a2ensite hattu.example.com.conf
 ```
 
-Ilmoitus: `Enabling site hattu.example.com`. Apache2 tulee vielä käynnistää uudelleen tai ladata asetukset uudelleen:
+![h35.png](https://github.com/Gerathh/linukka1/blob/main/h35.png)
+
+Nyt tuli miellyttävämpi ilmoitus kuten kuvasta näkyy:  
+Enabling site hattu.example.com. Vielä muistuttaa, että käynistähän apache2 uudestaan. Joten:
 
 ```bash
-systemctl reload apache2
+Systemctl reload apache 2
 ```
 
-`curl http://localhost` näyttää sisällön, mutta selain ei. `curl hattu.example.com` toimii. Luin Apachen oletussivuja ja päätin sallia `/home/jere/` -hakemistossa web-selauksen:
+Curlillla näkee http://localhostin sisällön mutta ei selaimella. Sen lisäksi Curlilla näkee hattu.example.com. Kyse ohn siis jostain muusta. Lueskeltuani apachen oletus-etusivua, päätän mennä whitelistaamaan  hakemiston missä tiedosto sijaitse.
 
 ```bash
 sudo nano /etc/apache2/apache2.conf
 ```
 
-Lisäsin sinne:
+Sinne lisäsin hakemiston whitelistille myös `/home/jere/` ja `Require all granted` jonka olen laittanut aiemmin tiedostoon hattu.example.com.conf
 
-```
-<Directory /home/jere/>
-    Require all granted
-</Directory>
-```
+![h36.png](https://github.com/Gerathh/linukka1/blob/main/h36.png)
 
-(jos se ei jo ollut määritelty VirtualHost-asetuksessa).
+No nyt pelittää 😊
 
-Nyt kaikki toimii. 😊
+![H37.png](https://github.com/Gerathh/linukka1/blob/main/H37.png)
 
----
-
-## Lähteet
-
-- [Apache HTTPD 2.4 Name-based Virtual Hosts Documentation](https://httpd.apache.org/docs/2.4/vhosts/name-based.html)  
-- [Name-based Virtual Hosts on Apache (Terokarvinen.com)](https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/)
+Lähteenä Apachen oletus-etusivu  
+https://httpd.apache.org/docs/2.4/vhosts/name-based.html  
+https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/
 ```
