@@ -112,7 +112,7 @@ Sinne lisäsin hakemiston whitelistille myös `/home/jere/` ja `Require all gran
 
 No nyt pelittää 😊
 
-![H37.png](https://github.com/Gerathh/linukka1/blob/main/H37.png)
+![H37.png](https://github.com/Gerathh/linukka1/blob/main/h37.png)
 
 Lähteenä Apachen oletus-etusivu:  
 https://httpd.apache.org/docs/2.4/vhosts/name-based.html  
