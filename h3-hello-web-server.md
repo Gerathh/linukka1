@@ -114,7 +114,7 @@ No nyt pelittää 😊
 
 ![H37.png](https://github.com/Gerathh/linukka1/blob/main/h37.png)
 
-Lähteenä Apachen oletus-etusivu:  
+Lähteenä Apachen oletus-etusivu (ensimmäinen kuva)  
 https://httpd.apache.org/docs/2.4/vhosts/name-based.html  
 https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/
 
