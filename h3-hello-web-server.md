@@ -1,13 +1,4 @@
-Alla on päivitetty, **yhtenäinen** Markdown-tiedosto, jossa:
 
-- Linkit on klikattavissa.  
-- Kaikki komennot ovat kopioitavissa.  
-- PNG-kuva upotetaan `![Kuvateksti](kuvapolku.png)` -muodossa.  
-- Voit kopioida **koko** sisällön suoraan yhdeksi `.md`-tiedostoksi GitHubiin.
-
-**Huom:** Tarkista, että kuvan GitHub-polku on oikein, ja että se on julkisesti saatavilla. Alla olevassa esimerkissä käytetään samaa osoitetta, joka oli jo tekstissäsi (`h31.png`).
-
----
 
 ```md
 # H3 Hello Web Server
