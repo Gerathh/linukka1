@@ -170,3 +170,10 @@ Tämän jälkeen:
 
 ![h415](https://github.com/Gerathh/linukka1/blob/main/h415.png)
 
+
+
+  Lähteet: https://terokarvinen.com/linux-palvelimet/
+https://hub.upcloud.com/
+https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/
+https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/
+https://haagahelia-my.sharepoint.com/personal/bgn754_myy_haaga-helia_fi/_layouts/15/Doc.aspx?sourcedoc={e3e57dd0-3c92-46bf-bbf8-9e27a9803797}&action=view&wd=target%28Linux%20palvelimet.one%7Cd0b8a096-f8e7-4da6-a7b6-f4e4ae40cb9f%2FTunti%204%7C4954bd20-3fff-49a7-a68b-f18896b8bb32%2F%29&wdorigin=NavigationUrl
