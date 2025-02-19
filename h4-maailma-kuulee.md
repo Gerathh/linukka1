@@ -40,7 +40,7 @@ Valitsin sijainniksi Suomen.  1Core, 1GB ram, 10GB tallennustilaa.
 
 Valitsin käyttöjärjestelmäksi Debian GNU/Linux 12 (Bookworm)
 
-![h43](F:\h4\h43.png)
+![h43]([linukka1/h43.png at main · Gerathh/linukka1](https://github.com/Gerathh/linukka1/blob/main/h43.png)
 
 Laitoin deploy. 
 
@@ -50,19 +50,19 @@ Tämän jälkeen siirryin virtuaalikoneelle. Kuvassa näkyy, että open-ssh on a
 
 
 
-![h44](F:\h4\h44.png)
+![h44]([linukka1/h44.png at main · Gerathh/linukka1](https://github.com/Gerathh/linukka1/blob/main/h44.png)
 
 ssh-keygen komennolla sain luotua public keyn. Jätin passwordin tyhjäksi enterillä.
 
 
 
-![h45](F:\h4\h45.png)
+![h45](https://github.com/Gerathh/linukka1/blob/main/h45.png))
 
 komennnolla:
 
 `cat id_rsa.pub`
 
-![image-20250219120428048](C:\Users\Jerep\AppData\Roaming\Typora\typora-user-images\image-20250219120428048.png)
+![h46]([linukka1/h46.png at main · Gerathh/linukka1](https://github.com/Gerathh/linukka1/blob/main/h46.png)
 
 Sain tulostettua public keyn jonka copy-pastesin upcloudiin ssh keyksi ja painoin siellä deploy.
 
@@ -76,7 +76,7 @@ Ucloudin ohjeiden mukaan "How to connnect " laitoin komennon
 
 Tämän jälkeen kirjoitin yes (pelkkä y ei kelpaa, jota automaagisesti kokeilin)
 
-![h47](F:\h4\h47.png)
+![h47]([linukka1/h47.png at main · Gerathh/linukka1](https://github.com/Gerathh/linukka1/blob/main/h47.png)
 
 Ajoin komennot
 
@@ -92,7 +92,7 @@ jonka jälkeen
 
 `sudo adduser jere sudo`
 
-![h48](F:\h4\h48.png)
+![h48]([linukka1/h48.png at main · Gerathh/linukka1](https://github.com/Gerathh/linukka1/blob/main/h48.png)
 
 Tämän jälkeen ansensin vielä roottina micron:
 
@@ -114,7 +114,7 @@ suoritin sitten komennon
 
 `chow jere.jere .ssh -R`
 
-![h410](F:\h4\h410.png)
+![h410]([linukka1/h410.png at main · Gerathh/linukka1](https://github.com/Gerathh/linukka1/blob/main/h410.png)
 
 tämän jälkeen poistuin kirjoittamalla
 
@@ -126,7 +126,7 @@ ssh jere@94.237.32.234
 
 ja olin nyt sisällä käyttäjänä enkä roottina
 
-![h411](F:\h4\h411.png)
+![h411]([linukka1/h411.png at main · Gerathh/linukka1](https://github.com/Gerathh/linukka1/blob/main/h411.png)
 
 Varmistin että käyttäjälläni on sudot. ja sitten poistin rootin käytöstä.
 
@@ -136,7 +136,7 @@ Varmistin että käyttäjälläni on sudot. ja sitten poistin rootin käytöstä
 
 `sudo rm /root/.ssh -r`
 
-![h412](F:\h4\h412.png)
+![h412]([linukka1/h412.png at main · Gerathh/linukka1](https://github.com/Gerathh/linukka1/blob/main/h412.png)
 
 Seuraavaksi palomuuri päälle
 
@@ -154,11 +154,11 @@ ja tarkistetaan vielä että se on päälllä varmasti
 
 `sudo ufw status verbose`
 
-![h413](F:\h4\h413.png)
+![h413]([linukka1/h413.png at main · Gerathh/linukka1](https://github.com/Gerathh/linukka1/blob/main/h413.png)
 
 Selaimeen IP jolla todennan että se on pystyssä ja toimii:
 
-![h414](F:\h4\h414.png)
+![h414]([linukka1/h414.png at main · Gerathh/linukka1](https://github.com/Gerathh/linukka1/blob/main/h414.png)
 
 ## c)
 
@@ -168,4 +168,5 @@ Tämän jälkeen:
 
 
 
-![h415](F:\h4\h415.png)
+![h415]([linukka1/h415.png at main · Gerathh/linukka1](https://github.com/Gerathh/linukka1/blob/main/h415.png)
+
