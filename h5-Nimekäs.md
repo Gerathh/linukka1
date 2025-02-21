@@ -29,7 +29,7 @@ Annoin sitten seuraavat käskyt:
 
 
 
-![h52](https://github.com/Gerathh/linukka1/blob/main/h51.png)
+![h52](https://github.com/Gerathh/linukka1/blob/main/h52.png)
 
 
 
@@ -47,7 +47,7 @@ Sen jälkeen loin conffaustiedoston jerepellinen.com:lile
 
 Lisäsin sinne kuvan mukaiset rivit:
 
-![h53](F:\h5\h53.png)
+![h53](https://github.com/Gerathh/linukka1/blob/main/h53.png)
 
 annoin komennot:
 
@@ -58,7 +58,7 @@ tuli error.
 
 Ehdotti katsomaan journalctl -xeu ja sieltähän se virhe löytyi. Näkyy myös ylläolevassa kuvassa.
 
-![h54](F:\h5\h54.png)
+![h54](https://github.com/Gerathh/linukka1/blob/main/h54.png)
 
 Korjasin tiedoston ja suoritin aiemmat komennot uudestaan.
 
@@ -72,7 +72,7 @@ Kävin vielä tarkistamassa ,
 
 että palomuurissa on tarvittavat portit auki.
 
-![h55](F:\h5\h55.png)
+![h55](https://github.com/Gerathh/linukka1/blob/main/h55.png)
 
 
 
@@ -119,7 +119,7 @@ Sitten vielä komento
 
 `host test.jerepellinen.com` Tämä on CNAME jolloin tuloksessa näkyy myös että tämä on alias.
 
-![h58](F:\h5\h58.png)
+![h58](https://github.com/Gerathh/linukka1/blob/main/h58.png)
 
 
 
