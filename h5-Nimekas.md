@@ -23,7 +23,7 @@ Annoin sitten seuraavat käskyt:
 
 `sudo mkdir -p /var/www/jerepellinen.com`
 
-`sudo chown -R testi:testi/var/www/jerepellinen.com`
+`sudo chown -R testi:testi /var/www/jerepellinen.com`
 
 `sudo chmod -R 755 /var/www/jerepellinen.com`
 
