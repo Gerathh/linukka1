@@ -175,7 +175,7 @@ Näkisin että tärkeintä kuitenkin on, että ymmärtää perusperiaatteen: nä
 
 
 
-#Lähteet:
+# Lähteet:
 
 
 https://unix.stackexchange.com/questions/460480/allow-access-to-apache-on-both-port-80-and-443-in-ubuntu-16-04
