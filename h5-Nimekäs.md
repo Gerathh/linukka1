@@ -2,7 +2,7 @@
 
 ## a)
 
-Minulla on  olemassa oleva dooimain jerepellinen.com jonka tiedostot sijaitsevat githubissa.
+Minulla on  olemassa oleva domain jerepellinen.com jonka tiedostot sijaitsevat githubissa.
 
 
 
@@ -15,9 +15,9 @@ UpCloudissta vuokraamani palvelimen ip on `94.237.32.234`
 
 
 
-Tämän jälkeen kirjauduin virtuaaallipalvelimelle. Olen aiemmmin luonut käyttäjän nimeltä testi jolla ei ole sudo-oikeuksia. (tapahtuu käyttäjällä jolla on sudo-oikeudet ja kirjoittamallla
+Tämän jälkeen kirjauduin virtuaalipalvelimelle. Olen aiemmmin luonut käyttäjän nimeltä testi jolla ei ole sudo-oikeuksia. (tapahtuu käyttäjällä jolla on sudo-oikeudet ja kirjoittamallla
 
- `sudo adduser testi` ja antamalla tapelliset tiedot ja salasanat sille selkeiden konsoilissa olevien ohjeiden mukaisesti.
+ `sudo adduser testi` ja antamalla tapelliset tiedot ja salasanat sille selkeiden konsoilissa olevien ohjeiden mukaisesti.)
 
 Annoin sitten seuraavat käskyt:
 
@@ -39,7 +39,7 @@ Annoin sitten seuraavat käskyt:
 
 
 
-Sen jälkeen loin conffaustiedoston jerepellinen.com:lile
+Sen jälkeen loin conffaustiedoston jerepellinen.com:lle
 
 `sudo nano /etc/apache2/sites-available/jerepellinen.conf`
 
@@ -127,6 +127,42 @@ Sitten vielä komento
 
 
 
+`dig jerepellinen.com ANY`
+`dig linuxkurssi.jerepellinen.com ANY`
+`dig google.com ANY`
+
+Vastauksista näkee ANSWER SECTIONISTA onko ne A, CNAME, NS, MX jne.  
+eli
+A records (IP:t)
+CNAME records (aliakset)
+NS records (nimipalvelin)
+MX records (sähköpostipalvelin)
+mahdollisesti TXT records for SPF/DMARC, jne.
+
+
+## f)
+
+dig-komento
+
+`dig jerepellinen.com txt`
+`dig jerepellinen.com any`
+
+
+Eli näistä tuloksista miostä tahansa domainista voi etsiä tuloksia joista löytyy rivejä jotka alkavat v=spf1 tai v=DMARC1
+
+host-komento
+host -t txt jerepellinen.com
+Näyttää domainin TXT-tietueet, joista SPF/DMARC löytyy.
+
+
+
+Yhteenveto
+
+SPF määrittelee, mitkä palvelimet saavat lähettää sähköpostia tietyn domainin nimissä.
+DMARC rakentuu SPF:n (ja/tai DKIM:n) päälle ja kertoo, mitä vastaanottajan pitäisi tehdä, jos viesti ei läpäise todennusta, sekä mihin mahdolliset raportit lähetetään.
+Näihin on olemassa hyviä työkaluja kuten DMARK analyzer tai MXToolbox. Nämä kertovat mitä spd- ja DMARK-määäritykset tarkoittavat. 
+
+Näkisin että tärkeintä kuitenkin on, että ymmärtää perusperiaatteen: nämä tietueet auttavat varmistamaan, ettei kukaan voi helposti esiintyä domainisi nimissä lähettäessään sähköposteja.
 
 
 
@@ -139,8 +175,7 @@ Sitten vielä komento
 
 
 
-
-
+#Lähteet:
 
 
 https://unix.stackexchange.com/questions/460480/allow-access-to-apache-on-both-port-80-and-443-in-ubuntu-16-04
@@ -149,4 +184,10 @@ https://www.linux.org/threads/solved-failed-to-start-the-apache-http-server.3910
 
 [django - How do I create add a domain's configuration file to /etc/apache2/sites-available/ in Apache2? - Stack Overflow](https://stackoverflow.com/questions/63527186/how-do-i-create-add-a-domains-configuration-file-to-etc-apache2-sites-availabl)
 
-[Rename a File in Linux – Bash Terminal Command](https://www.freecodecamp.org/news/rename-file-linux-bash-command/)
+[Rename a File in Linux – Bash Terminal Command](https://www.freecodecamp.org/news/rename-file-linux-bash-command/)  
+
+https://terokarvinen.com/linux-palvelimet/  
+
+https://community.cloudflare.com/top
+
+https://www.cloudflare.com/en-gb/learning/email-security/dmarc-dkim-spf/
