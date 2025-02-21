@@ -10,7 +10,8 @@ Aloitin dns -palvelintarjoajalta jolta olen domainin vuokrannut/hankkkinut eli c
 
 UpCloudissta vuokraamani palvelimen ip on `94.237.32.234`
 
-![h51](F:\h5\h51.png)
+![h51](https://github.com/Gerathh/linukka1/blob/main/h51.png)
+
 
 
 
@@ -28,7 +29,7 @@ Annoin sitten seuraavat käskyt:
 
 
 
-![h52](F:\h5\h52.png)
+![h52](https://github.com/Gerathh/linukka1/blob/main/h51.png)
 
 
 
