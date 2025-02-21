@@ -56,7 +56,7 @@ sudo systemctl reload apache2
 
 tuli error.
 
-Ehdotti katsomaan journalctl -xeu ja sieltähän se virhe löytyi. Näkyy myös ylläolevassa kuvassa.
+Ehdotti katsomaan `journalctl -xeu` ja sieltähän se virhe löytyi. Näkyy myös ylläolevassa kuvassa.
 
 ![h54](https://github.com/Gerathh/linukka1/blob/main/h54.png)
 
@@ -96,11 +96,11 @@ Oikeudet kuntoon:
 
 `sudo chown -R testi:testi /var/www/jerepellinen.com`
 
-![h56](F:\h5\h56.png)
+![h56](https://github.com/Gerathh/linukka1/blob/main/h56.png)
 
 Muokkasin jerepellinen.conf -tiedostoa lisäämällä sinne alidomainit.
 
-![h57](F:\h5\h57.png)
+![h57](https://github.com/Gerathh/linukka1/blob/main/h57.png))
 
 Sitten vielä komento
 
