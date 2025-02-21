@@ -51,8 +51,8 @@ Lisäsin sinne kuvan mukaiset rivit:
 
 annoin komennot:
 
-sudo a2ensite jerepellinen.conf
-sudo systemctl reload apache2
+`sudo a2ensite jerepellinen.conf`
+`sudo systemctl reload apache2`
 
 tuli error.
 
