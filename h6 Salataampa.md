@@ -75,7 +75,7 @@
 
 #### Virtuaalikoneen tiedot
 
-![h60](F:/h6/h60.png)
+![h60](https://github.com/Gerathh/linukka1/blob/main/h60.png)
 
 Ensimmäisenä ajoin 
 
@@ -85,7 +85,7 @@ sitten avaan portin 443 tcp protokollalle:
 
 `sudo ufw allow 443/tcp`
 
-![image-20250309223543782](C:\Users\Jerep\AppData\Roaming\Typora\typora-user-images\image-20250309223543782.png)
+![image-20250309223543782](https://github.com/Gerathh/linukka1/blob/main/h61.png)
 
 
 
