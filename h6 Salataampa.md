@@ -93,25 +93,25 @@ Sitten asennan lego:n
 
 `sudo apt install lego`
 
-![image-20250309223118566](C:\Users\Jerep\AppData\Roaming\Typora\typora-user-images\image-20250309223118566.png)
+![image-20250309223118566](https://github.com/Gerathh/linukka1/blob/main/h62.png)
 
 Avasin ja muokkasin /etc/apache2/sites-available/jerepellinen.com.conf -tiedostoa
 
-![image-20250310024757369](C:/Users/Jerep/AppData/Roaming/Typora/typora-user-images/image-20250310024757369.png)
+![image-20250310024757369](https://github.com/Gerathh/linukka1/blob/main/h63.png)
 
 
 
 Hain keyt cloudfaresta
 
-![image-20250310024458492](C:/Users/Jerep/AppData/Roaming/Typora/typora-user-images/image-20250310024458492.png)
+![image-20250310024458492](https://github.com/Gerathh/linukka1/blob/main/h64.png)
 
 Kopion nämä keyt /home/jere/public_sites/jerepellinen.com/certificates -kansioon
 
-![image-20250310025059796](F:/h6/h65.png)
+![image-20250310025059796](https://github.com/Gerathh/linukka1/blob/main/h65.png)
 
 
 
-![image-20250310025153817](C:/Users/Jerep/AppData/Roaming/Typora/typora-user-images/image-20250310025153817.png)
+![image-20250310025153817](https://github.com/Gerathh/linukka1/blob/main/h66.png)
 
 Käynnistin apache 2 uudelleen.
 
